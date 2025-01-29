@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit, sans-serif;
+}
+
+body {
+    background-color: #111729;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quote-container {
+    width: 544px;
+    height: fit-content;
+    background-color: #20293A;
+    border-radius: 12px;
+    position: relative;
+    padding: 32px 32px 40px;
+    margin-bottom: 16px;
+}
+
+.quote-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("resources/bg-image-random-quote.svg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.quote-author {
+    color: #E3E8EF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.01rem;
+    color: #E3E8EF;
+    margin-bottom: 12px;
+}
+
+.quote-tags {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.quote-tag {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid #534BDD;
+    color: #6466E9;
+
+    text-align: center;
+    font-size: 0.625rem;
+    font-weight: 500;
+    letter-spacing: -0.00625rem;
+}
+
+.quote-content {
+    width: 480px;
+    color: #97A3B6;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -0.015rem;
+}
+
+.function {
+    margin: 0 auto;
+    width: 112px;
+    height: 48px;
+    display: flex;
+    border-radius: 12px;
+    border: 2px solid #20293A;
+    overflow: hidden;
+}
+
+.function > button {
+    flex: 1;
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+    background-color: transparent;
+    outline: none;            
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+.function > button:hover {
+    background-color: #3b3e47; 
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+    color: #ffffff; 
+}
+
+.function > button:first-of-type {
+    border-right: 2px solid #20293A;
+}
